@@ -1,0 +1,13 @@
+<div class="grid grid-cols-4 gap-4">
+  <% User.all.each do |user| %>
+    <div class="p-6 bg-white rounded-lg shadow-xl">
+      <div class="border-b-2 border-slate-300">
+        <span class="text-2xl font-semi-bold"><%= user.name %></span>
+      </div>
+      <div class="py-2">
+        <div>E-mail: <%= user.email %></div>
+        <div>Job: <%= user.job %></div>
+      </div>
+    </div>
+  <% end %>
+</div>
